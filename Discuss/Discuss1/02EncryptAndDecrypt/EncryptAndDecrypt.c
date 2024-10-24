@@ -16,7 +16,7 @@ int main(void)
 {
     srand(time(NULL));
     printf("Data:");
-    char data[100];
+    unsigned char data[100];
     for(int i=0;i<100;i++)
         {data[i]=rand()%256;
         printf("%c",data[i]);}
@@ -24,12 +24,12 @@ int main(void)
     int key=rand()%256;
     printf("%d",key);
     printf("\nEncrypted data:");
-    char encrypted[100];
+    unsigned char encrypted[100];
     for(int j=0;j<100;j++)
         {encrypted[j]=encrypt(data[j],key);
         printf("%c",encrypted[j]);}
     printf("\nDecrypted data:");
-    char decrypted[100];
+    unsigned char decrypted[100];
     for(int k=0;k<100;k++)
         {decrypted[k]=decrypt(encrypted[k],key);
         printf("%c",decrypted[k]);}
