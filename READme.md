@@ -1,6 +1,6 @@
 东北大学 软件学院 本科2024届 程序设计代码库
 
-作业(OnlineJudge)+讨论课(Disscuss)+慕课堂(MoocTang)
+实验课(Experiment)+讨论课(Disscuss)+作业(OnlineJudge)+慕课堂(MoocTang)
 
 持续更新，希望给个star鼓励一下！
 
