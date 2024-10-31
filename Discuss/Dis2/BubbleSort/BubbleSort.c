@@ -1,20 +1,9 @@
-//冒泡排序算法实现
 #include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
-int main(void)
+void bubbleSort(int arr[],int n)
 {
-    //数组生成
-    srand(time(NULL));
-    int arr[100];
-    int n=0;
-    for(n=0;n<100;n++)
-        arr[n]=rand()%1000;
-    printf("Before sorting:\n");
-    for(n=0;n<100;n++)
-        printf("%d ",arr[n]);
-    printf("\n");
-    //冒泡排序
+    //冒泡排序,直接在原数组上排序
     int i,temp,sorted=0;
     while(sorted==0)
     {
@@ -30,6 +19,21 @@ int main(void)
             }
         }
     }
+}
+int main(void)
+{
+    //数组生成
+    srand(time(NULL));
+    int arr[100];
+    int n=0;
+    for(n=0;n<100;n++)
+        arr[n]=rand()%1000;
+    printf("Before sorting:\n");
+    for(n=0;n<100;n++)
+        printf("%d ",arr[n]);
+    printf("\n");
+    //调用冒泡排序算法
+    bubbleSort(arr,100);
     //输出排序后的数组
     printf("After sorting:\n");
     for(n=0;n<100;n++)
